@@ -1,4 +1,5 @@
 //OPEN CLOSE PRINCIPLE
+// open for extension, closed for modification
 
 #include<bits/stdc++.h>
 using namespace std;

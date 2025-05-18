@@ -1,4 +1,5 @@
 //OPEN CLOSE PRINCIPLE
+// open for extension, closed for modification
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -82,7 +83,7 @@ class ShoppingCartStorage{
 
 int main(){
     ShoppingCart *cart = new ShoppingCart();
-    
+
     cart->add_product(new Product("Monitor", 6000));
     cart->add_product(new Product("Mouse", 500));
 
