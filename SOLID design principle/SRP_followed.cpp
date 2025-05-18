@@ -39,7 +39,7 @@ public:
 
 class ShoppingCartPrinter{
     private:
-    ShoppingCart* cart;
+    ShoppingCart* cart; // has a relationship
 
     public:
     ShoppingCartPrinter(ShoppingCart* cart){
@@ -58,7 +58,7 @@ class ShoppingCartPrinter{
 
 class ShoppingCartStorage{
     private:
-    ShoppingCart* cart;
+    ShoppingCart* cart; // has a relationship
 
     public:
     ShoppingCartStorage(ShoppingCart* cart){
