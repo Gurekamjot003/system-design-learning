@@ -1,0 +1,15 @@
+# Ignore CMake build files
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore executables
+*.exe
+*.out
+*.obj
+
+# Ignore logs and VSCode files
+*.log
+.vscode/
