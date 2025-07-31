@@ -39,7 +39,7 @@ public:
             string match_id = "match" + to_string(match_counter++);
             Match* match = new Match(match_id, user, match_user, new StandardChessRules());
             active_matches[match_id] = match;
-            match->get_board()->display();
+            match->get_board()->display(Color::WHITE);
             return match_id;
         }
         

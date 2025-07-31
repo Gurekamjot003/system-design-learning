@@ -65,8 +65,7 @@ public:
         move_history.push_back(move);
 
         cout<<"Piece moved from " << from.to_algebraic_notation() << " to " << to.to_algebraic_notation() << endl;
-        board->display();
-
+        
         if(rules->is_in_check(get_opposite_color(current_turn), board)){
             if(rules->is_check_mate(get_opposite_color(current_turn), board)){
                 cout<<"Checkmate!"<<endl;
@@ -80,8 +79,9 @@ public:
             status = GameStatus::COMPLETED;
             return true;
         }
-
+        
         current_turn = get_opposite_color(current_turn);
+        board->display(current_turn);
         return true;
     }
 
